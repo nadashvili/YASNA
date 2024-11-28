@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მთავარი მენიუ</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #2b2b2b, #1e1e1e);
+            color: #d4d4d4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #menu-container {
+            text-align: center;
+        }
+
+        #menu-container h1 {
+            color: #ffffff;
+            font-size: 3rem;
+        }
+
+        #start-game-btn {
+            background: #444;
+            color: white;
+            font-size: 1.5rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 20px;
+        }
+
+        #start-game-btn:hover {
+            background: #666;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu-container">
+        <h1>DMB</h1>
+        <button id="start-game-btn">თამაშის დაწყება</button>
+        <p>აიცილე დაბრკოლებები და<br>ეცადე ააგროვო<br>რაც შეიძლება მეტი ქულა</p>
+    </div>
+
+    <script>
+        document.getElementById("start-game-btn").addEventListener("click", () => {
+            window.location.href = "game.html";  // გადადიხართ თამაშის გვერდზე
+        });
+    </script>
+</body>
+</html>
